@@ -22,15 +22,15 @@ function showFields() {
     sectionImage.style.display = "none";
 
     if (sectionType === "UPN") {
-        window.location.href = "file:///D:/app_steel/upn/index.html";
+        window.location.href = "https://mohmohragrag.github.io/app_steel/upn/index.html";
     } else if (sectionType === "IPN") {
-        window.location.href = "file:///D:/app_steel/ipn/index.html";
+        window.location.href = "https://mohmohragrag.github.io/app_steel/ipn/index.html";
     } else if (sectionType === "IPE") {
-        window.location.href = "file:///D:/app_steel/ipe/index.html";
+        window.location.href = "https://mohmohragrag.github.io/app_steel/ipe/index.html";
     } else if (sectionType === "HEA") {
-        window.location.href = "file:///D:/app_steel/hea/index.html";
+        window.location.href = "https://mohmohragrag.github.io/app_steel/hea/index.html";
     } else if (sectionType === "HEB") {
-        window.location.href = "file:///D:/app_steel/heb/index.html";
+        window.location.href = "https://mohmohragrag.github.io/app_steel/heb/index.html";
     } else if (sectionType && steelSections[sectionType]) {
         steelSections[sectionType].forEach(field => {
             const inputField = document.createElement("input");
