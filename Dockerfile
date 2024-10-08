@@ -1,17 +1,16 @@
-# Use an appropriate base image
+# استخدم صورة أساسية من Node.js
 FROM node:14
 
-# Set the working directory
-WORKDIR /app
+# إعداد مجلد العمل
+WORKDIR /usr/src/app
 
-# Copy all files from the current directory to the container
+# نسخ الملفات
+COPY package*.json ./
+RUN npm install
 COPY . .
 
-# Install dependencies (if using Node.js)
-RUN npm install
+# افتح المنفذ
+EXPOSE 80
 
-# Expose the port the app runs on (if using port 8080)
-EXPOSE 8080
-
-# Command to start the app
+# الأمر لتشغيل التطبيق
 CMD ["npm", "start"]
